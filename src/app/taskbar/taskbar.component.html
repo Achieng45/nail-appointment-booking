@@ -1,1 +1,53 @@
-<p>taskbar works!</p>
+<mat-toolbar class="toolbar" colour="primary">  
+    <mat-toolbar-row>
+        <span class="column">About</span>
+      
+       <span class="column"  cdkMenuItem  [cdkMenuTriggerFor]="services"  style=" cursor: pointer;">Services</span>   
+       
+        <img class="logo" src="\assets\lip.jpeg">
+        <span class="column">Blog</span>
+        <span class="column">Contact</span>
+    </mat-toolbar-row> 
+   </mat-toolbar>
+   
+
+
+<ng-template #services> 
+<div class="menu" cdkMenu>
+   
+<button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="manicure"> Manicure </button>
+<button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="pedicure"> Pedicure </button>
+<button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="nails"> Nails  </button>
+
+</div> 
+
+</ng-template> 
+
+<ng-template #nails>
+   <div class="submenu" cdkMenu>
+   <button class="submenuitem" cdkMenuItem>Gel</button>
+   <button class="submenuitem" cdkMenuItem>Acrylics</button>
+   <button class="submenuitem" cdkMenuItem>Tips</button>
+   <button class="submenuitem" cdkMenuItem>French</button>
+  </div> 
+</ng-template>
+<ng-template #manicure>
+   <div class="submenu" cdkMenu>
+   <button class="submenuitem" cdkMenuItem>Basic Manicure</button>
+   <button class="submenuitem" cdkMenuItem>Signature Manicure</button>
+  
+   </div>
+</ng-template>
+<ng-template #pedicure>
+   <div class="submenu" cdkMenu>
+   <button class="submenuitem" cdkMenuItem>Signature pedicure</button>
+   <button class="submenuitem" cdkMenuItem>Spa pedicure</button>
+  </div>
+   
+</ng-template>
+
+
+
+
+
+
