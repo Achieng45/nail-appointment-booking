@@ -1,22 +1,21 @@
-
 .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    
-  }
-  
-  mat-toolbar-row {
+ 
+    background-color: rgb(255,255,255); 
+}
+
+mat-toolbar-row {
     display: flex;
     flex: 1;
     align-items: center;
     align-content: center;
     margin-left: 400px;
     font-size: large;
-  }
-  
-  .column {
+}
+
+.column {
     height: 100px;
     width: 100px;
     align-items: center;
@@ -25,92 +24,96 @@
     /*margin-right: 16px;  */
     justify-content: center;
     padding-left: 40px;
-    
-  }
-  .logo {
+
+}
+
+.logo {
     width: 100px;
     height: 100px;
-  
+
     margin-top: 20px;
     margin-left: 45px;
     margin-right: 45px;
-  }
-  .about {
+}
+
+.about {
     flex: 1;
     margin-left: 100px;
-  }
-  .column:hover {
+}
+
+.column:hover {
     background-color: black;
     color: aliceblue;
-  }
-  .menu {
+}
+
+.menu {
     display: inline-flex;
     flex-direction: column;
     min-width: 180px;
     max-width: 280px;
     background-color: rgb(255, 255, 255);
     padding: 6px 0;
-    margin-left: 400px;
-    position: absolute;
     
-  }
-  .menuitem {
+    position: absolute;
+
+}
+
+.menuitem {
     background-color: transparent;
     cursor: pointer;
     border: none;
-  
+
     user-select: none;
     min-width: 64px;
     line-height: 36px;
     padding: 0 16px;
-  
+
     display: flex;
     align-items: center;
     flex-direction: row;
     flex: 1;
     position: relative;
-    
-  }
-  .menuitem > span {
+
+}
+
+.menuitem>span {
     display: flex;
     flex-direction: row;
     flex: 1;
     justify-content: flex-end;
-  }
-  .menu .menuitem:hover {
+}
+
+.menu .menuitem:hover {
     background-color: rgb(208, 208, 208);
-  }
-  .menu .menuitem[role="menuitemradio"][aria-checked="true"] {
-    background-color: rgb(225, 225, 225);
-  }
-  .menu .menuitem[role="menuitemcheckbox"][aria-checked="true"] {
-    background-color: rgb(225, 225, 225);
-  }
-  .menu .menuitem:active {
+}
+
+.menu .menuitem:active {
     background-color: rgb(170, 170, 170);
-  }
-  /* .menuitem[aria-expanded='true'] {
+}
+
+/* .menuitem[aria-expanded='true'] {
       background-color: rgb(208, 208, 208) !important;
     } */
-  .submenu{
-      
-     margin-left: 600px;
+.submenu {
+
+    /* margin-left: 600px; */
     position: absolute;
-    top: 150px; 
-  }  
-  .submenuitem{
-     position: relative;
-      border: none;
-      display: flex;
-      flex-direction: column;
-      background-color: transparent;
-      flex: 1;
-      cursor: pointer;
-  user-select: none;
+    top: 3%;
+}
+
+.submenuitem {
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
     min-width: 64px;
     line-height: 36px;
     padding: 0 16px;
-     
-  
-    
-  }
+
+
+
+}
