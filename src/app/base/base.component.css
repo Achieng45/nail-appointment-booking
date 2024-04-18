@@ -1,0 +1,234 @@
+.base {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: slideIn 2s forwards;
+}
+
+.container {
+  height: 100vh;
+}
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  border-radius: 4px;
+  padding: 20px 50px;
+  border: none;
+  background-color: burlywood;
+  opacity: 0;
+  transition: opacity 1s ease;
+  animation: fadeIn 10s forwards;
+}
+.beauty {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+  opacity: 0;
+  transition: opacity 1s ease;
+  animation: fadeIn 10s forwards;
+}
+.overlay:hover {
+  background-color: rgba(170, 14, 14, 0.8);
+  transform: translate(-50%, -42%);
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.crown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+.nailsby {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textdiv {
+  display: flex;
+  justify-content: center;
+
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.text {
+  padding-left: 10px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.flower {
+  height: 200px;
+  width: 200px;
+}
+.container1 {
+  margin-top: 20px;
+  align-items: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.experience {
+  margin-top: 60px;
+  font-size: large;
+}
+.experienceem {
+  color: burlywood;
+  font-size: 30px;
+}
+.serviceimage {
+  height: 430px;
+  width: 430px;
+  margin-right: 5px;
+ transition: transform 0.5s ease;
+ 
+}
+.services {
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0.5%;
+  
+}
+.serviceimage:hover {
+  transform: scale(1.1);
+}
+.imagediv {
+  overflow: hidden;
+}
+
+.separator {
+  width: 20%;
+  border-bottom: 1px solid burlywood;
+  margin-left: 35px;
+}
+
+.firstimagediv {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+.servicetextdiv {
+  display: flex;
+  flex-direction: row;
+
+  height: 50vh;
+}
+
+.innerservicediv {
+  display: flex;
+  flex-direction: column;
+
+  
+  margin-right: 20px;
+  margin-top: 1px;
+ 
+  height: 430px;
+  width: 430px;
+}
+.servicetext {
+  margin-top: 4%;
+  display: flex;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.pdiv{
+    margin-left: 30px;
+    line-height: 1.6;
+    font-size: 20px;
+
+}
+.servicenails{
+    font-size: 20px;
+}
+.locationseparator{
+    border-bottom: 1px solid burlywood;
+    width: 10%;
+    margin-top: 1%;
+}
+.location{
+    height: 90vh;
+    margin-top: 1%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.howto{
+    margin-top: 3%;
+}
+.olesangale{
+    font-size: 20px;
+}
+.address{
+    /* margin-top: 2%; */
+}
+.oleaddress{
+     margin-top: 0%; 
+    float: left;
+}
+.phone{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    
+}
+.envelope{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+   margin-left: 50px;
+}
+.number{
+    margin-left: 10px;
+    color: burlywood;
+}
+.email{
+    margin-left: 10px;
+    color: burlywood;
+}
+
+footer{
+    margin-top: 1%;
+    height: 100vh;
+   
+}
+.footerdiv{
+    display: flex;
+    flex-direction: row;
+}
