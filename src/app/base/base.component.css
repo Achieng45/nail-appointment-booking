@@ -9,10 +9,11 @@
 
 .container {
   height: 100vh;
+  margin-top: 1%;
 }
 .overlay {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
   border-radius: 4px;
@@ -25,7 +26,7 @@
 }
 .beauty {
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-style: italic;
@@ -63,6 +64,7 @@
   padding-top: 10px;
 }
 .welcome {
+    height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +86,7 @@
 .text {
   padding-left: 10px;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 15px;
 }
 .flower {
   height: 200px;
@@ -93,7 +95,7 @@
 .container1 {
   margin-top: 20px;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
@@ -104,7 +106,7 @@
 }
 .experienceem {
   color: burlywood;
-  font-size: 30px;
+  font-size: 20px;
 }
 .serviceimage {
   height: 430px;
@@ -114,7 +116,7 @@
  
 }
 .services {
-  height: 130vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
 
@@ -132,6 +134,7 @@
   width: 20%;
   border-bottom: 1px solid burlywood;
   margin-left: 35px;
+  margin-top: 7%;
 }
 
 .firstimagediv {
@@ -158,7 +161,7 @@
   width: 430px;
 }
 .servicetext {
-  margin-top: 4%;
+  margin-top: 7%;
   display: flex;
   font-size: 30px;
   margin-left: 30px;
@@ -167,19 +170,20 @@
 .pdiv{
     margin-left: 30px;
     line-height: 1.6;
-    font-size: 20px;
+    font-size: 15px;
+    margin-top: 7%;
 
 }
 .servicenails{
-    font-size: 20px;
+    font-size: 15px;
 }
 .locationseparator{
     border-bottom: 1px solid burlywood;
     width: 10%;
-    margin-top: 1%;
+    margin-top: 0%;
 }
 .location{
-    height: 90vh;
+    height: 50vh;
     margin-top: 1%;
   
     display: flex;
@@ -189,10 +193,11 @@
 }
 
 .howto{
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .olesangale{
-    font-size: 20px;
+    font-size: 15px;
+    padding-top: 1%;
 }
 .address{
     /* margin-top: 2%; */
@@ -206,6 +211,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 50px;
+    align-items: center;
     
 }
 .envelope{
@@ -215,20 +221,46 @@
    margin-left: 50px;
 }
 .number{
-    margin-left: 10px;
+   
     color: burlywood;
 }
 .email{
-    margin-left: 10px;
+   
     color: burlywood;
 }
 
 footer{
     margin-top: 1%;
-    height: 100vh;
+    height: 90vh;
    
 }
 .footerdiv{
     display: flex;
+    flex-direction: column;
+}
+.findus{
+    margin-top: 0%;
+}
+.logo{
+    margin-top: 1%;
+    height: 100px;
+    width: 100px;
+}
+.bottomfooter{
+    display: flex;
     flex-direction: row;
+    
+    justify-content: space-around;
+    margin-top: 9%;
+}
+.bottomseparator{
+    border-right: 2px solid burlywood;
+    height: 200px;
+}
+.topfooter{
+    display: flex;
+    justify-content: center;
+}
+.support{
+    margin-top: 0%;
 }

@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { TaskbarComponent } from "../taskbar/taskbar.component";
+
+
 @Component({
-  selector: 'app-base',
-  standalone: true,
-  imports: [CommonModule,GoogleMapsModule],
-  templateUrl: './base.component.html',
-  styleUrl: './base.component.css'
+    selector: 'app-base',
+    standalone: true,
+    templateUrl: './base.component.html',
+    styleUrl: './base.component.css',
+    imports: [CommonModule, RouterOutlet, RouterModule, TaskbarComponent]
 })
 export class BaseComponent {
 
@@ -16,5 +19,7 @@ ngOnInit(): void {
     this.isImageLoaded=true;
   },2000);
 }
-
+book(){
+  console.log("clicked")
+}
 }

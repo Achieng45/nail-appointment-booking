@@ -1,15 +1,13 @@
-
-<html>
-  <head><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhDtcYx81i0OCTPFMHrnYOz1oaMp1CV5g"></script></head>
-<body>
+<app-taskbar></app-taskbar>
   <div class="container">
   <img class="base" src="\assets\base8.jpg" alt="" />
   <p class="beauty" [ngStyle]="{ opacity: isImageLoaded ? 1 : 0 }">
     Experience Pure bliss: Beauty awaits you here
   </p>
-  <button class="overlay" [ngStyle]="{ opacity: isImageLoaded ? 1 : 0 }">
+   <button class="overlay" [ngStyle]="{ opacity: isImageLoaded ? 1 : 0 }" routerLink="/booking">
     BOOK APPOINTMENT
-  </button>
+  </button> 
+ 
 </div>
 <div class="crown">
   <span><img src="\assets\icon.png" alt="" /></span>
@@ -89,7 +87,7 @@
 </div>
 <div class="location">
     <div class="howto"><p><em class="experienceem">How To</em></p></div>
-    <div><h1>Find Us</h1>
+    <div class="findus"><h1>Find Us</h1>
     </div>
     <div class="locationseparator"></div>
     <div class="olesangale"><p>Nails by Adino, Ole Sangale Road,Madaraka</p></div>
@@ -105,16 +103,30 @@
 <footer>
   <div class="footerdiv">
     <div class="topfooter">
-    <div><img src="" alt=""></div>
-    <div class="footerseparator"></div>
+    <div><img class="logo" src="\assets\lip.jpeg" alt=""></div>
+    
     </div>
     <div class="bottomfooter">
-     <div><p><em>Support</em></p></div>
-      
+     <div class="support"><p><em class="experienceem">Support</em></p>
+      <p>F.A.Q</p>
+      <p>PRIVACY POLICY</p>
+      <P>TERMS AND CONDITIONS</P>
+      <P>ACCESIBILTY</P>
+      <P>CONTACT US</P>
+    </div>
+     <div class="bottomseparator"></div>
+     <div><p><em class="experienceem">Follow us</em></p>
+      <P>INSTAGRAM</P>
+      <P>FACEBOOK</P>
+      <P>PINTEREST</P>
+      <P>NEWSLETTER</P>
+    </div>
+     <div class="bottomseparator"></div>
+     <div><p><em class="experienceem">Nails by Adino</em></p>
+      <P>CAREERS</P>
+      <P>LOCATION</P>
+    </div>
     </div>
 </div>
 </footer>
 
-
-</body>
-</html>

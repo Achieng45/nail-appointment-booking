@@ -1,0 +1,22 @@
+<app-taskbar></app-taskbar>
+<div class="select">
+  <div class="deco"><img src="\assets\icon.png" alt="" /></div>
+  <div class="adino">
+    <div style="margin-left: 30px;">
+      <h1>Adino Nails</h1>
+    </div>
+    <div><h1 style="margin-right: auto">Filter Your Booking</h1></div>
+    <div>
+      <h4>Select a Professional</h4>
+      <mat-form-field>
+        <mat-select [formControl]="Professionals">
+          @for (Professional of ProfessionalsList;track Professional){
+          <mat-option [value]="Professional.valueOf">{{
+            Professional
+          }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
