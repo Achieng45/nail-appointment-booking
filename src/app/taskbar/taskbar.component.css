@@ -1,123 +1,104 @@
-.toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   background-color: white;
-    
-   height: 20vh;
-   margin-right: 20px;
-   margin-left: 20px;
-   
-}
 
-mat-toolbar-row {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    align-content: center;
-    margin-left: 400px;
-    font-size: large;
-}
-
-.column {
-    height: 100px;
-    width: 100px;
-    align-items: center;
-    align-content: center;
-    margin-left: 16px;
-    /*margin-right: 16px;  */
-    justify-content: center;
-    padding-left: 40px;
-
+mat-toolbar {
+  background-color: antiquewhite;
+  align-items: center;
+ justify-content: space-around;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-
-    margin-top: 20px;
-    margin-left: 45px;
-    margin-right: 45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
 }
 
+.center{
+    display: flex;
+    flex-direction: row;
+    
+    
+  
+  
+   
+   
+   gap: 0px;
+   
+  
+}  
+
 .about {
-    flex: 1;
-    margin-left: 100px;
+  flex: 1;
+  margin-left: 100px;
 }
 
 .column:hover {
-    background-color: burlywood;
-    color: black;
+  background-color: burlywood;
+  color: black;
 }
 
 .menu {
-    display: inline-flex;
-    flex-direction: column;
-    min-width: 180px;
-    max-width: 280px;
-    background-color: rgb(255, 255, 255);
-    padding: 6px 0;
-    
-    position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 180px;
+  max-width: 280px;
+  background-color: rgb(255, 255, 255);
+  padding: 6px 0;
 
+  position: absolute;
 }
 
 .menuitem {
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 
-    user-select: none;
-    min-width: 64px;
-    line-height: 36px;
-    padding: 0 16px;
+  user-select: none;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
 
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex: 1;
-    position: relative;
-
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  position: relative;
 }
 
-.menuitem>span {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: flex-end;
+.menuitem > span {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .menu .menuitem:hover {
-    background-color: rgb(208, 208, 208);
+  background-color: rgb(208, 208, 208);
 }
 
 .menu .menuitem:active {
-    background-color: rgb(170, 170, 170);
+  background-color: rgb(170, 170, 170);
 }
 
-/* .menuitem[aria-expanded='true'] {
-      background-color: rgb(208, 208, 208) !important;
-    } */
 .submenu {
-
-    /* margin-left: 600px; */
-    position: absolute;
-    top: 3%;
+  /* margin-left: 600px; */
+  position: absolute;
+  top: 3%;
 }
 
 .submenuitem {
-    position: relative;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    flex: 1;
-    cursor: pointer;
-    user-select: none;
-    min-width: 64px;
-    line-height: 36px;
-    padding: 0 16px;
-
-
-
+  position: relative;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  flex: 1;
+  cursor: pointer;
+  user-select: none;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+}
+.login {
+  margin-left: 70px;
+}
+.signup {
+  margin-left: 300px;
 }

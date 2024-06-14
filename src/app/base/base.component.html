@@ -1,132 +1,134 @@
 <app-taskbar></app-taskbar>
-  <div class="container">
-  <img class="base" src="\assets\base8.jpg" alt="" />
-  <p class="beauty" [ngStyle]="{ opacity: isImageLoaded ? 1 : 0 }">
-    Experience Pure bliss: Beauty awaits you here
-  </p>
-   <button class="overlay" [ngStyle]="{ opacity: isImageLoaded ? 1 : 0 }" routerLink="/booking">
-    BOOK APPOINTMENT
-  </button> 
- 
-</div>
-<div class="crown">
-  <span><img src="\assets\icon.png" alt="" /></span>
-</div>
-<div class="welcome">
-  <p><em class="experienceem">Welcome To</em></p>
-</div>
-<div class="nailsby"><h1>Nails by Adino</h1></div>
-<div class="textdiv">
-  <p class="text">
-    Experience the luxury of extra-ordinary service at our salon,Our talented
-    team is always receiving new innovations and creative techniques to keep up
-    on latest fashionable trends. We are dedicated to provide exceptional and
-    individual attention to each and every client
-  </p>
-</div>
-<div class="container1">
-  <div class="experience">
-    <p><em class="experienceem">Experience Our</em></p>
+
+<div class="base">
+  <div class="writings">
+    <p class="catchy"><span style="color: blue">EXPERIENCE PURE BLISS</span></p>
+    <br />
+    <p class="catchy">BEAUTY AWAITS YOU HERE</p>
+    <br />
+    <p>
+      Incredible <span style="font-weight: 500">nail designs</span> and overall
+      <span style="font-weight: 500">good services</span>
+    </p>
+    <br />
+    <button mat-raised-button color="accent" routerLink="/booking">
+      Book an Appointment <mat-icon>arrow_forward</mat-icon>
+    </button>
   </div>
-  <div><h2>Services</h2></div>
-  <div class="servicenails">
-    <p>Nails by Adino is proud to offer complete manicure pedicure and nails</p>
+  <div class="baseimg">
+    <img class="landing" src="\assets\landing.jpg" alt="" />
   </div>
 </div>
+
 <div class="services">
+  <div class="intro">
+    <h1 style="color: #da8388">Services</h1>
+    <p
+      style="
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+      "
+    >
+      The services we offer
+    </p>
+  </div>
   <div class="firstimagediv">
-    <div class="imagediv"> 
+    <div class="imagediv">
       <img class="serviceimage" src="\assets\nails5.jpg" alt="" />
+      <div class="overlap">
+        <p>Nails</p>
+        <p style="margin-left: 10px">
+          Indulge in the luxury of beautiful nails
+        </p>
+        <div style="flex-direction: row; display: flex">
+          <a style="margin-top: 3px; margin-right: px">READ MORE </a
+          ><mat-icon>arrow_forward</mat-icon>
+        </div>
+      </div>
     </div>
-     <div class="imagediv"> 
+    <div class="imagediv">
       <img class="serviceimage" src="\assets\manicure2.jpg" alt="" />
-     </div> 
-     <div class="imagediv"> 
+      <div class="overlap">
+        <p>Manicure</p>
+        <p style="margin-left: 10px">
+          Welcome to our manicure oasis, where luxury meets precision and every
+          detail matters.
+        </p>
+        <div style="flex-direction: row; display: flex">
+          <a style="margin-top: 3px; margin-right: px">READ MORE </a
+          ><mat-icon>arrow_forward</mat-icon>
+        </div>
+      </div>
+    </div>
+    <div class="imagediv">
       <img class="serviceimage" src="\assets\pedicure1.jpg" alt="" />
-     </div> 
-  </div>
-
-  <div class="servicetextdiv">
-    <div class="innerservicediv">
-      <div class="servicetext"><p>Nails</p></div>
-      <div class="separator"></div>
-       <div class="pdiv">
-      <p >
-        Indulge in the luxury of beautiful nails and discover the endless
-        possibilities that await you at Nails by Adino. Book your appointment
-        today and let us help you shine from fingertips to toes.
-      </p>
-      </div>
-    </div>
-    <div class="innerservicediv" >
-      <div class="servicetext"><p>Manicure</p></div>
-      <div class="separator"></div>
-       <div class="pdiv">
-      <p >
-        Welcome to our manicure oasis, where luxury meets precision and every
-        detail matters. At Nails by Adino, we believe that beautifully manicured
-        nails are the epitome of elegance and sophistication. Whether you're in
-        need of a quick touch-up or a complete transformation, our expert nail
-        technicians are here to make your manicure dreams a reality.
-      </p>
-      </div>
-    </div>
-    <div class="innerservicediv">
-      <div class="servicetext"><p>Pedicure</p></div>
-      <div class="separator"></div>
-      <div class="pdiv">
-      <p >
-        Step into a world of relaxation and rejuvenation with our luxurious
-        pedicure treatments at Nails by Adino. Designed to soothe tired feet
-        and enhance natural beauty, our pedicures are a blissful escape from the
-        hustle and bustle of everyday life.
-      </p>
+      <div class="overlap">
+        <p>Pedicure</p>
+        <p style="margin-left: 10px">
+          Designed to soothe tired feet and enhance natural beauty
+        </p>
+        <div style="flex-direction: row; display: flex">
+          <a style="margin-top: 3px; margin-right: px">READ MORE </a
+          ><mat-icon>arrow_forward</mat-icon>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="location">
-    <div class="howto"><p><em class="experienceem">How To</em></p></div>
-    <div class="findus"><h1>Find Us</h1>
-    </div>
-    <div class="locationseparator"></div>
-    <div class="olesangale"><p>Nails by Adino, Ole Sangale Road,Madaraka</p></div>
-    <div class="address"><h1>Salon Address</h1></div>
-    <div class="oleaddress"><p>12100 Ole,Sangale</p></div>
-    <div class="phone"><img src="\assets\telephone.svg" alt=""><p><em class="number">0745806782</em></p></div>
-    <div class="envelope"><img src="\assets\envelope.svg" alt=""><p><em class="email">steph&gmail.com</em></p></div>
+  <div class="testimonials">
+    <div><p>Testimonials</p></div>
+    <div class="swiper-container" >
+      <div class="swiper-wrapper" >
+    <div class="swiper-slide" *ngFor="let testimonial of testimonials">
+      <div>
+        <img src="\assets\star.svg" alt="" />
 
-   
-  
-
+        <img src="\assets\star.svg" alt="" />
+        <img src="\assets\star.svg" alt="" />
+        <img src="\assets\star.svg" alt="" />
+        <img src="\assets\star.svg" alt="" />
+        <div>
+          <p>{{ testimonial.name }}</p>
+        </div>
+        <div><img class="avatar" [src]="testimonial.image" alt="" /></div>
+      </div>
 </div>
-<footer>
-  <div class="footerdiv">
-    <div class="topfooter">
-    <div><img class="logo" src="\assets\lip.jpeg" alt=""></div>
-    
+    </div>  
     </div>
-    <div class="bottomfooter">
-     <div class="support"><p><em class="experienceem">Support</em></p>
-      <p>F.A.Q</p>
-      <p>PRIVACY POLICY</p>
-      <P>TERMS AND CONDITIONS</P>
-      <P>ACCESIBILTY</P>
-      <P>CONTACT US</P>
-    </div>
-     <div class="bottomseparator"></div>
-     <div><p><em class="experienceem">Follow us</em></p>
-      <P>INSTAGRAM</P>
-      <P>FACEBOOK</P>
-      <P>PINTEREST</P>
-      <P>NEWSLETTER</P>
-    </div>
-     <div class="bottomseparator"></div>
-     <div><p><em class="experienceem">Nails by Adino</em></p>
-      <P>CAREERS</P>
-      <P>LOCATION</P>
-    </div>
-    </div>
-</div>
-</footer>
+    <div class="swiper-pagination"></div>
 
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+  </div>
+  <footer>
+    <div class="footerdiv">
+      <div class="topfooter">
+        <div><img class="logo" src="\assets\lip.jpeg" alt="" /></div>
+      </div>
+      <div class="bottomfooter">
+        <div class="support">
+          <p><em class="experienceem">Support</em></p>
+          <p>F.A.Q</p>
+          <p>PRIVACY POLICY</p>
+          <P>TERMS AND CONDITIONS</P>
+          <P>ACCESIBILTY</P>
+          <P>CONTACT US</P>
+        </div>
+        <div class="bottomseparator"></div>
+        <div>
+          <p><em class="experienceem">Follow us</em></p>
+          <P>INSTAGRAM</P>
+          <P>FACEBOOK</P>
+          <P>PINTEREST</P>
+          <P>NEWSLETTER</P>
+        </div>
+        <div class="bottomseparator"></div>
+        <div>
+          <p><em class="experienceem">Nails by Adino</em></p>
+          <P>CAREERS</P>
+          <P>LOCATION</P>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

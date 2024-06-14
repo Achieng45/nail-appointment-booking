@@ -1,53 +1,91 @@
-<mat-toolbar class="toolbar" >  
-    <mat-toolbar-row>
-        <span class="column">About</span>
-      
-       <span class="column"  cdkMenuItem  [cdkMenuTriggerFor]="services"  style=" cursor: pointer;">Services</span>   
-       
-        <img class="logo" src="\assets\lip.jpeg">
-        <span class="column">Blog</span>
-        <span class="column">Contact</span>
-    </mat-toolbar-row> 
-   </mat-toolbar>
-   
+<mat-toolbar primary="antiquewhite" >
+  <div>
+  <a ><h1 class="logo" >Nails by Adino</h1></a>
+</div>
+<div>
+  <a mat-button >About</a>
+<a mat-button >Services</a>
+<a mat-button >Blog</a>
+<a mat-button >Contact</a>
+</div>
+<div>
+<a style="margin-right: 10px;" mat-raised-button color="accent" >Login</a>
+<a mat-raised-button color="primary" >Signup</a>
+</div>
+</mat-toolbar>
 
 
-<ng-template #services> 
-<div class="menu" cdkMenu>
-   
-<button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="manicure"> Manicure </button>
-<button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="pedicure"> Pedicure </button>
-<button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="nails"> Nails  </button>
 
-</div> 
 
-</ng-template> 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <mat-toolbar class="row"  >
+  
+  <div class="image">
+   <h1 class="logo">Nails by Adino</h1>
+  </div>
+  <div class="center">
+  <a mat-button>About</a>
+
+  <a mat-button cdkMenuItem [cdkMenuTriggerFor]="services" style="cursor: pointer"
+    >Services</a
+  >
+
+  <a mat-button>Blog</a>
+  <a mat-button>Contact</a>
+  </div>
+ <div class="buttons">
+  
+  <a style="margin-right: 10px;" mat-raised-button color="accent">Login</a>
+  <a mat-raised-button color="primary">Sign up</a>
+</div>
+<h1>Hey whatsup</h1>
+</mat-toolbar> -->
+<!--
+<ng-template #services>
+  <div class="menu" cdkMenu>
+    <button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="manicure">
+      Manicure
+    </button>
+    <button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="pedicure">
+      Pedicure
+    </button>
+    <button class="menuitem" cdkMenuItem [cdkMenuTriggerFor]="nails">
+      Nails
+    </button>
+  </div>
+</ng-template>
+ 
 <ng-template #nails>
-   <div class="submenu" cdkMenu>
-   <button class="submenuitem" cdkMenuItem>Gel</button>
-   <button class="submenuitem" cdkMenuItem>Acrylics</button>
-   <button class="submenuitem" cdkMenuItem>Tips</button>
-   <button class="submenuitem" cdkMenuItem>French</button>
-  </div> 
+  <div class="submenu" cdkMenu>
+    <button class="submenuitem" cdkMenuItem>Gel</button>
+    <button class="submenuitem" cdkMenuItem>Acrylics</button>
+    <button class="submenuitem" cdkMenuItem>Tips</button>
+    <button class="submenuitem" cdkMenuItem>French</button>
+  </div>
 </ng-template>
 <ng-template #manicure>
-   <div class="submenu" cdkMenu>
-   <button class="submenuitem" cdkMenuItem>Basic Manicure</button>
-   <button class="submenuitem" cdkMenuItem>Signature Manicure</button>
-  
-   </div>
+  <div class="submenu" cdkMenu>
+    <button class="submenuitem" cdkMenuItem>Basic Manicure</button>
+    <button class="submenuitem" cdkMenuItem>Signature Manicure</button>
+  </div>
 </ng-template>
 <ng-template #pedicure>
-   <div class="submenu" cdkMenu>
-   <button class="submenuitem" cdkMenuItem>Signature pedicure</button>
-   <button class="submenuitem" cdkMenuItem>Spa pedicure</button>
+  <div class="submenu" cdkMenu>
+    <button class="submenuitem" cdkMenuItem>Signature pedicure</button>
+    <button class="submenuitem" cdkMenuItem>Spa pedicure</button>
   </div>
-   
-</ng-template>
-
-
-
-
-
-
+</ng-template> -->
