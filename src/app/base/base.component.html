@@ -22,15 +22,15 @@
 
 <div class="services">
   <div class="intro">
-    <h1 style="color: #da8388">Services</h1>
-    <p
+    <h1 class="intro1">Services We offer</h1>
+    <!-- <p
       style="
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 20px;
       "
     >
       The services we offer
-    </p>
+    </p> -->
   </div>
   <div class="firstimagediv">
     <div class="imagediv">
@@ -74,38 +74,104 @@
       </div>
     </div>
   </div>
-  <div class="testimonials">
-    <div><p>Testimonials</p></div>
+  </div>
+  
+   
+   <div class="meet">
+    <p class="meet1" >Meet Our Nail technicians</p>
+    <div class="staffmembers"  >
+      
+     
+    <div style="margin-top: 20px;"  *ngFor="let member of staff" >
+     
+      
+        <div class="staff" ><img class="staffimg" [src]="member.image" alt="">
+
+       
+
+          <div><p style="text-align: center; color:white " >{{ member.name }}</p></div>
+       
+      </div>
+      
+    </div>
+    </div>
+ 
+   </div>
+   
+   <div class="waiting" ><p style="margin-left: 30px; " >We are waiting for you.Please make an appointment here</p>
+    <button style="margin-right: 20px; " mat-raised-button color="accent" routerLink="/booking">
+      Book an Appointment <mat-icon>arrow_forward</mat-icon>
+    </button>
+  
+  </div>
+
+
     <div class="swiper-container" >
+     <p style="text-align: center;" > Reviews from our Customers</p>
       <div class="swiper-wrapper" >
+       
     <div class="swiper-slide" *ngFor="let testimonial of testimonials">
-      <div>
+      <div class="testimonials">
+      <div >
         <img src="\assets\star.svg" alt="" />
 
         <img src="\assets\star.svg" alt="" />
         <img src="\assets\star.svg" alt="" />
         <img src="\assets\star.svg" alt="" />
         <img src="\assets\star.svg" alt="" />
+        </div>
+        <div>
+          <p class="text" >{{testimonial.text}}</p>
+        </div>
+        
+        <div><img class="avatar" [src]="testimonial.image" alt="" /></div>
         <div>
           <p>{{ testimonial.name }}</p>
+          </div>
         </div>
-        <div><img class="avatar" [src]="testimonial.image" alt="" /></div>
       </div>
-</div>
+
     </div>  
-    </div>
+    
     <div class="swiper-pagination"></div>
 
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-scrollbar"></div>
+ 
+ </div>
+ <div class="footer1" >
+  <div>
+    <p>Directions</p>
+    <p>Syokimau Mombasa Road</p>
   </div>
+  <div>
+    <p>Working hours</p>
+     <p>Monday-Friday 9:00-20:00</p>
+     <p>Saturday 10:00-12:00</p>
+  </div>
+  <div>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6874403737243!2d36.9092168740987!3d-1.3642048357144205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d07e7b8c09b%3A0x8fb76d56e37a9a8a!2sGateway%20Mall!5e0!3m2!1sen!2ske!4v1720014931255!5m2!1sen!2ske" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+  </div>
+ </div>
   <footer>
-    <div class="footerdiv">
-      <div class="topfooter">
-        <div><img class="logo" src="\assets\lip.jpeg" alt="" /></div>
-      </div>
+    <div class="search" > 
+    
+       <div><p>Search this site</p></div>
+     <div> <img src="\assets\search-heart.svg" alt=""></div> 
+     </div> 
+    
+      
       <div class="bottomfooter">
+        <div >
+          <p><em class="experienceem">Services</em></p>
+          <p>Manicure</p>
+          <p>Pedicure</p>
+          <P>Acrylics</P>
+          <P>Gel</P>
+          <P>Tips</P>
+        </div>
+        <div class="bottomseparator"></div>
         <div class="support">
           <p><em class="experienceem">Support</em></p>
           <p>F.A.Q</p>
@@ -117,18 +183,39 @@
         <div class="bottomseparator"></div>
         <div>
           <p><em class="experienceem">Follow us</em></p>
-          <P>INSTAGRAM</P>
-          <P>FACEBOOK</P>
-          <P>PINTEREST</P>
-          <P>NEWSLETTER</P>
+          <div class="contacts">
+          <div class="telephone1"><img src="\assets\instagram.svg" alt=""><P>INSTAGRAM</P></div>
+         <div class="telephone1"><img src="\assets\facebook.svg" alt=""><P>FACEBOOK</P></div>
+          <div class="telephone1"><img src="\assets\pinterest.svg" alt=""><P>PINTEREST</P></div>
+         <div class="telephone1"><img src="\assets\newspaper.svg" alt=""><P>NEWSLETTER</P></div>
+        </div>
         </div>
         <div class="bottomseparator"></div>
         <div>
-          <p><em class="experienceem">Nails by Adino</em></p>
-          <P>CAREERS</P>
-          <P>LOCATION</P>
+          <p><em class="experienceem">Contacts</em></p>
+          <div class="contacts">
+          <div class="telephone1"><img src="\assets\telephone.svg" alt=""><p>+254756782805</p></div>
+          <div class="telephone1"><img src="\assets\whatsapp.svg" alt=""><p>+254756782805</p></div>
+          <div class="telephone1"><img src="\assets\envelope.svg" alt=""><p>adino&#64;gmail.com</p></div>
+        </div>
         </div>
       </div>
+      <div class="pay-div" >
+        <img class="pay" src="\assets\visa.jpeg" alt="">
+        <img class="pay" src="\assets\mastercard.jpeg" alt="">
+        <img class="pay" src="\assets\paypal.jpeg" alt="">
+        <img class="pay" src="\assets\Apple Pay Logo.jpeg" alt="">
+      </div>
+    <div class="rights" >
+      
+      <div><p>&#64;2024,All rights reserved</p></div>
+      <div class="rights2" ><p>home</p>
+        <p>Site map</p>
+        <p>Privacy policy</p>
+        <p>Terms of Service</p>
+      </div>
     </div>
+   
   </footer>
-</div>
+
+

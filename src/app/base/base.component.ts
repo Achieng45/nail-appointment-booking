@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
     standalone: true,
     templateUrl: './base.component.html',
     styleUrl: './base.component.css',
-    imports: [CommonModule, RouterOutlet, RouterModule, TaskbarComponent,MatButtonModule,MatIconModule]
+    imports: [CommonModule, RouterOutlet, RouterModule, TaskbarComponent,MatButtonModule,MatIconModule,]
 })
 export class BaseComponent implements AfterViewInit {
   testimonials = [
@@ -31,19 +31,38 @@ export class BaseComponent implements AfterViewInit {
       name: 'Jane D'
     },
     {
-      text: "I had an amazing experience at [Nail Salon Name]! The staff took their time to ensure my nails were perfect, and the range of colors and designs they offer is fantastic. It's clear they prioritize customer satisfaction. I'll definitely be back!",
+      text: "I had an amazing experience at Nails by Adino The staff took their time to ensure my nails were perfect, and the range of colors and designs they offer is fantastic. It's clear they prioritize customer satisfaction. I'll definitely be back!",
       image: '/assets/profilet.jpg',
       name: 'Emily T'
     },
     
   ];
+  staff=[
+    {
+      image:'/assets/staff2.jpg',
+      name:'Anita'
+    },
+    {
+      image:'/assets/staf4.jpg',
+      name:'Adino'
+    },
+    {
+      image:'/assets/staff3.jpg',
+      name:'Stephanie'
+    },
+    {
+      image:'/assets/staff1.jpg',
+      name:'Shallom'
+    }
+  ]
   ngAfterViewInit() {
     new Swiper('.swiper-container', {
+      modules: [Navigation, Pagination],
       slidesPerView:1,
       
       pagination: {
         el: '.swiper-pagination',
-        clickable: true
+        clickable: false
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -51,6 +70,7 @@ export class BaseComponent implements AfterViewInit {
       },
       scrollbar:{
         el: '.swiper-button-next',
+        hide:true
       },
       direction:'horizontal',
       loop:true
